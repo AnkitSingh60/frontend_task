@@ -33,6 +33,11 @@ const Home = () => {
           Find 
         </Button>
       </div>
+      <div className="submitbutton2">
+        <Button style={{marginLeft:"300px" }} variant="contained" color="success" onClick={submitHandler} disabled = {!isOk}>
+          Find 
+        </Button>
+      </div>
         </>
     )
 }

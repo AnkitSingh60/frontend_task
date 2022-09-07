@@ -45,6 +45,13 @@ body {
   bottom: 290px;
   left: 320px;
 }
+.submitbutton2{
+  width: 30%;
+  position: relative;
+  top: 720px;
+  left: 300px;
+  margin-bottom: 50px;
+}
 
 .btn2{
   position: relative;
