@@ -35,7 +35,9 @@ body {
 
 .TimeDiv{
   text-align: end;
-  margin-right: 50px
+  margin-right: 50px;
+  font-size: larger;
+  font-weight: 800;
 }
 .submitbutton{
   width: 30%;
