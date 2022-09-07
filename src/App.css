@@ -1,9 +1,14 @@
 * {
   font-family: "Source Sans 3", sans-serif;
-  font-weight: 600
+  font-weight: 600;
+  
 }
-.App {
+
+body {
   text-align: center;
+  background-image: url("../src//images//bg5\ flower.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .headerContainer {
@@ -13,14 +18,15 @@
   align-items: center;
 }
 .h3 {
-  text-align: center;
+  position: relative;
+  right: 60px;
 }
 
-.reset {
-  margin-left: 10px;
-}
+
 .dest_container {
-  width: 250px;
+  position: relative;
+  right: 60px;
+  width: 300px;
   height: 250px;
   margin: auto;
   justify-content: center;
@@ -35,20 +41,19 @@
   width: 30%;
   position: relative;
   bottom: 290px;
-  left: 420px;
+  left: 320px;
 }
-.btn1{
-  position: relative;
-  right: 60px;
-  top: 30px;
-}
+
 .btn2{
   position: relative;
-  left: 40px;
-  bottom: 12px;
+  right: 80px;
+  top: 10px;
 }
 .ResultDiv{
-  border: 1px solid red;
+  position: relative;
+  right: 60px;  
+  top: 130px;
+  border: 1px solid rgb(100, 98, 98);
   width: 50%;
   margin: auto;
   text-align: center;
