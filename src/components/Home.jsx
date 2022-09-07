@@ -28,9 +28,9 @@ const Home = () => {
             </div>
             
           </div>
-      <div className="submit-button">
-        <Button className="button" variant="contained" onClick={submitHandler} disabled = {!isOk}>
-          Find Falcone!
+      <div className="submitbutton">
+        <Button style={{marginLeft:"300px" }} variant="contained" color="success" onClick={submitHandler} disabled = {!isOk}>
+          Find 
         </Button>
       </div>
         </>

@@ -15,9 +15,7 @@
 .h3 {
   text-align: center;
 }
-.buttoncontainer {
-  /* border: 1px solid red; */
-}
+
 .reset {
   margin-left: 10px;
 }
@@ -28,8 +26,24 @@
   justify-content: center;
   text-align: center;
 }
-.Destination-select {
-}
+
 .TimeDiv{
-  
+  text-align: end;
+  margin-right: 50px
+}
+.submitbutton{
+  width: 30%;
+  position: relative;
+  bottom: 290px;
+  left: 420px;
+}
+.btn1{
+  position: relative;
+  right: 60px;
+  top: 30px;
+}
+.btn2{
+  position: relative;
+  left: 40px;
+  bottom: 12px;
 }
