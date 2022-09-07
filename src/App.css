@@ -47,3 +47,12 @@
   left: 40px;
   bottom: 12px;
 }
+.ResultDiv{
+  border: 1px solid red;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.dilogBox{
+  letter-spacing: 2px;
+}

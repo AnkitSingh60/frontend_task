@@ -71,15 +71,17 @@ const ResultPage = () => {
     return (
         <>
         <Header/>
-            <div className="Result-body">
+            <div className="ResultDiv">
                 {console.log(result)}
                 {result[0] == null && result[1] === undefined ? (
                     <CircularProgress />
                 ) : result[0] === 'success' ? (
                     <>
-                        <div className="result-partone">
-                            {result[0]}! Congratulations on Finding Falcone. King Shan is
+                        <div className="dilogBox">
+                            {result[0]} <p>
+                            ! Congratulations on Finding Falcone. King Shan is
                             Mighty Pleased.
+                            </p>
                         </div>
                         <div className="result-parttwo">
                             <div>Time Taken - {timeTaken}</div>
@@ -88,13 +90,13 @@ const ResultPage = () => {
                     </>
                 ) : (
                     <>
-                        <div className="result-partone">
+                        <p className="dilogBox">
                             Uhh ooo ! You couldnt find Falcone. King Shan is going to be
                             super pissed!! Better Luck Next Time!!
-                        </div>
+                        </p>
                     </>
                 )}
-                <Button variant="contained" onClick={HomeButton}>
+                <Button  variant="contained" color="success"  onClick={HomeButton} style={{marginTop:"20px"}}>
                     Play Again
                 </Button>
             </div>
