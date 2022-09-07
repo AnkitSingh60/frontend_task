@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef, createContext } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
-export const falconeContext = createContext();
+export const contextFal = React.createContext();
 
 
 const FalconContext = ({ children }) => {
@@ -18,7 +18,7 @@ const FalconContext = ({ children }) => {
 
     const fetchPlanets = async () => {
         try {
-            const res = await axios.get("https://findfalcone.herokuapp.com/planets")
+            let res = await axios.get("https://findfalcone.herokuapp.com/planets")
             return res.data;
         } catch (error) {
             console.log('error:', error.message)
@@ -26,7 +26,7 @@ const FalconContext = ({ children }) => {
     }
     const fetchVehicles = async () => {
         try {
-            const res = await axios.get("https://findfalcone.herokuapp.com/vehicles")
+            let res = await axios.get("https://findfalcone.herokuapp.com/vehicles")
             return res.data;
         } catch (error) {
             console.log('error:', error.message)
@@ -45,15 +45,15 @@ const FalconContext = ({ children }) => {
             setPlanets(foundPlanet)
             setVehicles(foundVehicle)
             getAllVehicleCount(foundVehicle)
-        })()
+        })();
 
     }, [])
 
-    const set = { planets, vehicles, chosenPlanet, chosenVehicles, vehicleCount, timeTaken, totalTime, isOk, vehicleOnCount, setPlanets, setVehicles, setChosenPlanet, setChosenVehicles, setTimeTaken, setTotalTime, setIsOk }
+    const value = { planets, vehicles, chosenPlanet, chosenVehicles, vehicleCount,setVehicleCount, timeTaken, totalTime, isOk, vehicleOnCount, setPlanets, setVehicles, setChosenPlanet, setChosenVehicles, setTimeTaken, setTotalTime, setIsOk }
     return (
-        <falconeContext.Provider set={set}>
+        <contextFal.Provider value={value}>
             {children}
-        </falconeContext.Provider>
+        </contextFal.Provider>
     )
 }
 
