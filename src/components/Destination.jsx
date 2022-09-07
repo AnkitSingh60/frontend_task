@@ -29,10 +29,10 @@ const Destination = () => {
     }
     return (
         <>
-            <div className="Parent_Card">
+            <div>
                 {chosenPlanet.map((planet, index) => {
                     return (
-                        <div className="PlanetsAndVehicles" key={index}>
+                        <div key={index}>
 
                             <Paper elevation={5}>
                                 <FormControl fullWidth key={index}>
@@ -53,7 +53,7 @@ const Destination = () => {
                                     <>
                                         {chosenPlanet[index] ? (
                                             <>
-                                                <div className="Distance_measure">
+                                                <div>
                                                     Distance - {findDistance(index)}
                                                 </div>
                                                 <Vehicles

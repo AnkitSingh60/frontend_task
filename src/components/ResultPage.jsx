@@ -83,7 +83,7 @@ const ResultPage = () => {
                             Mighty Pleased.
                             </p>
                         </div>
-                        <div className="result-parttwo">
+                        <div>
                             <div>Time Taken - {timeTaken}</div>
                             <div>Found on Planet - {result[1]}</div>
                         </div>
