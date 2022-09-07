@@ -19,10 +19,10 @@ const Home = () => {
         <>
         <Header/>
         <div className="container">
-        <h3>Choose Planets you want to Search..</h3>
+        <h3 className="h3">Choose Planets you want to Search..</h3>
         <TimeTaken />
         </div>
-        <div className="center-body">
+        <div className="dest_container">
             <div className="Destination-select">
               {planets && vehicles ? <Destination /> : <></>}
             </div>

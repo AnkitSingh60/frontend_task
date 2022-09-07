@@ -3,6 +3,7 @@ import { contextFal } from '../CreateContext/FalconContext';
 import axios from "axios";
 import { Button, CircularProgress } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import Header from './Header';
 
 
 const ResultPage = () => {
@@ -69,6 +70,7 @@ const ResultPage = () => {
 
     return (
         <>
+        <Header/>
             <div className="Result-body">
                 {console.log(result)}
                 {result[0] == null && result[1] === undefined ? (

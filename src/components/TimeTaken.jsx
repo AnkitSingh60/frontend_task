@@ -4,8 +4,8 @@ const TimeTaken = () => {
   const { totalTime } = useContext(contextFal);
   return (
     <>
-      <div className='Time'>
-        <button className='total'>TimeTaken : {totalTime}</button>
+      <div className='TimeDiv'>
+      TimeTaken : {totalTime}
       </div>
 
     </>

@@ -1,3 +1,35 @@
+* {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600
+}
 .App {
   text-align: center;
+}
+
+.headerContainer {
+  width: 250px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.h3 {
+  text-align: center;
+}
+.buttoncontainer {
+  /* border: 1px solid red; */
+}
+.reset {
+  margin-left: 10px;
+}
+.dest_container {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+.Destination-select {
+}
+.TimeDiv{
+  
 }
